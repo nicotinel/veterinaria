@@ -1,0 +1,36 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header{
+    padding: 15px 20px;
+    text-align: center;
+}
+
+nav ul{
+    list-style:none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+#titulo{
+    color: blue;
+    font-size: 2em;
+    margin: 0;
+}
+
+.bienvenida{
+    text-align: center;
+    margin: 20px 0;
+}
