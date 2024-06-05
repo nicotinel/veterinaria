@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacto - Veterinaria Maskotas</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Veterinaria Maskotas</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="ubicacion.html">Ubicación</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contacto">
+        <h2>Contacto</h2>
+        <p>
+          Estamos aquí para ayudarte. Si tienes alguna pregunta o necesitas más información sobre nuestros servicios, por favor, no dudes en contactarnos a través del siguiente formulario. Nuestro equipo se pondrá en contacto contigo lo antes posible.
+        </p>
+
+        <p>
+          También puedes enviarnos un correo electrónico a 
+          <a href="mailto:info@veterinariamaskotas.com.ar">info@veterinariamaskotas.com.ar</a>
+          o llamarnos al 
+          <a href="tel:+5411-1234567890">+11-1234567890</a>.
+
+          <a href="https://wa.me/549111234567890" target="_blank">
+            <img src="img/whatsapp.png" alt="">
+          </a>
+
+          <a href="https://api.whatsapp.com/send/?phone=549111234567890?text='Hola'" target="_blank">
+            <img src="img/whatsapp.png" alt="">
+          </a>
+
+
+        </p>
+<hr>
+        <form>
+          <label for="nombre">Nombre:</label> 
+          <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre" 
+          minlength="8"
+          maxlength="50"/> 
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email"  required/> <br>
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono"  required/>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" id="cantidad" name="cantidad"  required/>
+
+          <select name="" id="" multiple>
+            <option value="1">Opción 1</option>
+            <option value="2" selected>Opción 2</option>
+            <option value="3">Opción 3</option>
+            <option value="4">Opción 4</option>
+            <option value="5">Opción 5</option>
+
+
+          </select>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Derechos reservados Veterinaria Maskotas © 2024</p>
+    </footer>
+  </body>
+</html>
