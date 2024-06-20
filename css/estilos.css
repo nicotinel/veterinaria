@@ -1,136 +1,102 @@
-/* Paleta de colores */
-:root {
-    --primary-color: #b3d84d;
+/* Paleta de Colores */
+:root{
+    --primary-color: #297e10;
     --secondary-color: #f9f9f9;
     --text-color: #333;
     --white: #ffffff;
 }
 
-/* Estilos Generales */
-body {
-    font-family: 'Arial', sans-serif;
+/* Estilos Generales*/
+head{}
+
+body{
+    font-family: Arial, sans-serif;
     background-color: var(--secondary-color);
 }
-
 header{
-    background-color: var(--primary-color);
-    color: var(--white);
     padding: 15px 20px;
     text-align: center;
+    background-color: var(--primary-color);
+    color: rgb(213, 4, 255);
 }
-
 nav ul{
-    list-style:none;
+    list-style: none;
     padding: 0;
     text-align: center;
 }
-
 nav ul li{
     display: inline;
     margin-right: 15px;
 }
-
 nav ul li a{
     text-decoration: none;
-    color: #000;
+    color: rgb(255, 255, 255);
 }
-
 #titulo{
-    color: blue;
-    font-size: 2em;
+    color: #297e10;
+    front-size: 2em;
     margin: 0;
 }
-
 .bienvenida{
     text-align: center;
     margin: 20px 0;
 }
 
-main {
+main{
     padding: 20px;
     text-align: center;
 }
 
-section, article {
+section, article{
     margin: 20px;
     padding: 20px;
     background-color: var(--white);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.171);
 }
 
-footer {
+footer{
     padding: 10px 0;
     position: relative;
     width: 100%;
     bottom: 0;
 }
 
-/* Estilos específicos por página */
-/* Página 'Contacto' */
-/* Página 'Nosotros' */
-/* Página 'Galería' */
-/* Página 'Index' */
-/* Página 'Servicios' */
-/* Página 'Ubicación' */
+/* Estilos especificos por pagina*/
 
-/* Página 'Registro' */
-.registro form {
+/* Pagina "Contacto" */
+
+/* Pagina "Nosotros" */
+
+/* Pagina "Galeria" */
+
+/* Pagina "Index" */
+
+/* Pagina "Servicio" */
+
+/* Pagina "Ubicación" */
+
+/* Pagina "Registro" */
+.registro form{
     margin: auto;
     padding: 20px;
     width: 50%;
     background: var(--white);
     border-radius: 8px;
 }
-
-.registro label {
+.registro label{
     margin: 10px 0;
     display: block;
     font-weight: bold;
 }
-
-.registro input, .registro select{
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px; 
-}
-
-.registro button {
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Página 'Login' */
-.login form {
-    margin: auto;
-    padding: 20px;
-    width: 50%;
-    background: var(--white);
-    border-radius: 8px;
-}
-
-.login label {
-    margin: 10px 0;
-    display: block;
-    font-weight: bold;
-}
-
-.login input {
+.registro input{
     width: 100%;
     padding: 8px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
-.login button {
+.registro button{
     background-color: var(--primary-color);
     color: var(--white);
     border: none;
@@ -139,7 +105,38 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
+.registro button:hover{
+    background-color: #09ce0f;
+}
 
-.login button:hover {
-    background-color: #45a049;
+/* Pagina "Login" */
+.login form{
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+    background: var(--white);
+    border-radius: 8px;
+}
+.login label{
+    margin: 10px 0;
+    display: block;
+    font-weight: bold;
+}
+.login input{
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.login button{
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login button:hover{
+    background-color: #09ce0f;
 }
