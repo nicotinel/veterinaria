@@ -67,9 +67,79 @@ footer {
 }
 
 /* Estilos específicos por página */
+
 /* Página 'Contacto' */
 /* Página 'Nosotros' */
 /* Página 'Galería' */
+.galeria {
+    display: block;
+    text-align: center;
+}
+
+.galeria img {
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.galeria-contenedor {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; 
+    gap: 20px; 
+    margin: 20px 0; 
+}
+
+.galeria-item {
+    flex: 1 1 calc(33% - 40px); 
+    max-width: calc(33% - 40px);
+    margin: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Página 'Productos' */
+.productos {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.productos-tabla{
+    width: 100%;
+    margin-top: 20px;
+}
+.productos-tabla caption {
+    caption-side: top; 
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;   
+}
+
+.productos-tabla th,
+.productos-tabla td {
+    border: 1px solid #ccc; 
+    padding: 10px;
+    text-align: left;
+}
+
+.productos-tabla th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.productos-tabla tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+
 /* Página 'Index' */
 /* Página 'Servicios' */
 /* Página 'Ubicación' */
