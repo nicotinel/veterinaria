@@ -1,0 +1,59 @@
+/* Para pantallas de 1024px o menos */
+@media (max-width: 1024px) {
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .servicio {
+    width: calc(50% - 40px);
+  }
+
+  .galeria-item {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+
+  .contacto form,
+  .registro form,
+  .login form {
+    width: 70%;
+  }
+}
+
+/* Para pantallas de 600px o menos */
+@media (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .contacto form,
+  .registro form,
+  .login form {
+    width: 90%;
+  }
+
+  .servicio,
+  .galeria-item {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+      width: 100%;
+  }
+
+  .carousel-item {
+      min-width: 50%; /* Mostrar 2 productos simultáneamente en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+      min-width: 100%; /* Mostrar 1 producto simultáneamente en pantallas muy pequeñas */
+  }
+}

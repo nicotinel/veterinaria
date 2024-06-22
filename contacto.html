@@ -2,57 +2,158 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Contacto - Veterinaria Maskotas</title>
-    <link rel="stylesheet" href="css/estilos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Veterinaria Maskotas ofrece servicios de alta calidad para el cuidado de tus mascotas. Visítanos para consultas, vacunaciones y más."
+    />
+    <meta
+      name="keywords"
+      content="veterinaria, mascotas, servicios veterinarios, vacunación, consultas, cirugías"
+    />
+    <meta name="author" content="José Páez" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.5.2/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    <title>Veterinaria Maskotas</title>
   </head>
   <body>
     <header>
-      <h1>Veterinaria Maskotas</h1>
-      <nav>
+      <h1>
+        <a href="index.html"
+          ><img
+            id="img-logo"
+            src="/assets/images/logo/logo.png"
+            alt="Veterinaria Maskotas"
+        /></a>
+      </h1>
+      <nav role="navigation">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="ubicacion.html">Ubicación</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a href="login.html">Contacto</a></li>
+          <li><a href="index.html" aria-label="Inicio">Inicio</a></li>
+          <li><a href="servicios.html" aria-label="Servicios">Servicios</a></li>
+          <li><a href="nosotros.html" aria-label="Nosotros">Nosotros</a></li>
+          <li><a href="galeria.html" aria-label="Galería">Galería</a></li>
+          <li><a href="productos.html" aria-label="Productos">Productos</a></li>
+          <li><a href="ubicacion.html" aria-label="Ubicación">Ubicación</a></li>
+          <li><a href="#contacto" aria-label="Contacto">Contacto</a></li>
+          <li><a href="registro.html" aria-label="Registro">Registro</a></li>
+          <li><a href="login.html" aria-label="Login">Login</a></li>
         </ul>
       </nav>
     </header>
+    <div class="solicita-turno">
+      <a href="solicita-turno.html" class="button-solicita-turno">
+        <i class="fas fa-calendar-alt"></i> Solicitá un turno
+      </a>
+    </div>
     <main>
-      <section class="contacto">
+      <section id="contacto" class="contacto">
         <h2>Contacto</h2>
         <p>
-          Estamos aquí para ayudarte. Si tienes alguna pregunta o necesitas más información sobre nuestros servicios, por favor, no dudes en contactarnos a través del siguiente formulario. Nuestro equipo se pondrá en contacto contigo lo antes posible.
+          Estamos aquí para ayudarte. Si tienes alguna pregunta o necesitas más
+          información sobre nuestros servicios, por favor, no dudes en
+          contactarnos a través del siguiente formulario. <br>Nuestro equipo se
+          pondrá en contacto contigo lo antes posible.
         </p>
-
         <p>
-          También puedes enviarnos un correo electrónico a 
-          <a href="mailto:info@veterinariamaskotas.com.ar">info@veterinariamaskotas.com.ar</a>
-          o llamarnos al 
+          También puedes enviarnos un correo electrónico a
+          <a href="mailto:info@veterinariamaskotas.com"
+            >info@veterinariamaskotas.com</a
+          >
+          o llamarnos al
           <a href="tel:+5411-1234567890">+11-1234567890</a>.
-
-          <a href="https://wa.me/549111234567890" target="_blank">
-            <img src="img/whatsapp.png" alt="">
-          </a>
-
-
         </p>
-        <form>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" required></textarea>
+        <form
+          id="contacto-form"
+          action="/assets/php/procesar_contacto.php"
+          method="post"
+          novalidate
+        >
+          <div class="form-group">
+            <label for="nombre">Nombre y apellido:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre y apellido*"
+              required
+              minlength="3"
+              title="El nombre debe tener al menos 3 caracteres."
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Dirección de email*"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="Introduce una dirección de correo electrónico válida."
+            />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="Teléfono*"
+              required
+              pattern="\d{10}"
+              title="Introduce un número de teléfono válido."
+            />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Escribe tu mensaje aquí*"
+              required
+              minlength="10"
+              title="El mensaje debe tener al menos 10 caracteres."
+            ></textarea>
+          </div>
           <button type="submit">Enviar</button>
         </form>
       </section>
     </main>
     <footer>
-      <p>Derechos reservados Veterinaria Maskotas © 2024</p>
+      <p>© 2024 | Veterinaria Maskotas | Todos los derechos reservados</p>
+      <div class="social-media">
+        <p>Síguenos:</p>
+        <a href="https://twitter.com" target="_blank" class="social-icon"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://facebook.com" target="_blank" class="social-icon"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://youtube.com" target="_blank" class="social-icon"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank" class="social-icon"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <p class="disclaimer">
+        Este sitio fue desarrollado solo para fines académicos.<br />
+        Los nombres, imágenes, videos y marcas comerciales son propiedad de sus
+        dueños.<br />
+        No se pretende ningún uso comercial ni infracción de derechos de autor.
+      </p>
     </footer>
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+      <img src="/assets/images/whatsapp.webp" alt="WhatsApp" />
+    </a>
   </body>
 </html>

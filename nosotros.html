@@ -3,67 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Veterinaria Maskotas ofrece servicios de alta calidad para el cuidado de tus mascotas. Visítanos para consultas, vacunaciones y más."
+    />
+    <meta
+      name="keywords"
+      content="veterinaria, mascotas, servicios veterinarios, vacunación, consultas, cirugías"
+    />
+    <meta name="author" content="José Páez" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous">    
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <title>Veterinaria Maskotas</title>
-    <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
     <header>
-      <!-- <h1 id="titulo">Veterinaria Maskotas</h1> -->
-      <a href="index.html">
-        <img src="img/logo.png" alt="Veterinaria Maskotas" />
-      </a>
-      <nav>
+      <h1>
+        <a href="index.html"
+          ><img id="img-logo" src="/assets/images/logo/logo.png" alt="Veterinaria Maskotas"
+        /></a>
+      </h1>
+      <nav role="navigation">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="ubicacion.html">Ubicación</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="registro.html">Registro</a></li>
-          <li><a href="login.html">Contacto</a></li>
-          <li>
-            <a href="http://Educacionit.com" target="_blank">Educación IT</a>
-          </li>
+          <li><a href="index.html" aria-label="Inicio">Inicio</a></li>
+          <li><a href="servicios.html" aria-label="Servicios">Servicios</a></li>
+          <li><a href="#nosotros" aria-label="Nosotros">Nosotros</a></li>
+          <li><a href="galeria.html" aria-label="Galería">Galería</a></li>
+          <li><a href="productos.html" aria-label="Productos">Productos</a></li>
+          <li><a href="ubicacion.html" aria-label="Ubicación">Ubicación</a></li>
+          <li><a href="contacto.html" aria-label="Contacto">Contacto</a></li>
+          <li><a href="registro.html" aria-label="Registro">Registro</a></li>
+          <li><a href="login.html" aria-label="Login">Login</a></li>
         </ul>
       </nav>
     </header>
+    <div class="solicita-turno">
+      <a href="solicita-turno.html" class="button-solicita-turno">
+        <i class="fas fa-calendar-alt"></i> Solicitá un turno
+      </a>
+    </div>
     <main>
-        <section class="sobre-nosotros">
-          <h2>Sobre Nosotros</h2>
-          <p>
-            Somos un equipo de veterinarios profesionales dedicados al cuidado y bienestar de tus mascotas. Con años de experiencia, nuestra misión es brindar el mejor servicio y atención.
-          </p>
-          <p>
-            Nuestro equipo está compuesto por veterinarios altamente calificados y apasionados por la salud animal. Creemos en un enfoque preventivo y en la educación de nuestros clientes para asegurar el bienestar continuo de sus mascotas.
-          </p>
-          <p>
-            Nos esforzamos por mantenernos actualizados con las últimas tecnologías y técnicas en el campo de la veterinaria, asegurando que cada mascota reciba la mejor atención posible.
-          </p>
-        </section>
-
-        <section class="multimedia">
-          <h2>Conoce Más Sobre Nosotros</h2>
-          <div class="video">
-            <h3>Video de Presentación</h3>
-            <video width="600" controls>
-              <source src="media/video/educacionit.webm" type="video/mp4">
-              <!-- <source src="https://static.educacionit.com/educacionit/assets/home-intro-bg-video.webm" type="video/mp4"> -->
-            </video>
-          </div>
-
-          <div class="audio">
-            <h3>Información Útil</h3>
-            <audio controls>
-                <source src="media/audio/informacion.mp3" type="audio/mpeg">
-                Tu navegador no soporta el elemento de audio.
-            </audio>
+      <section id="nosotros" class="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+          Somos un equipo de veterinarios profesionales dedicados al
+          <strong>cuidado y bienestar de tus mascotas</strong>. Con años de
+          experiencia, nuestra misión es brindar el mejor servicio y atención.
+        </p>
+        <p>
+          Nuestro equipo está compuesto por veterinarios altamente calificados y
+          apasionados por la salud animal. Creemos en un enfoque preventivo y en
+          la educación de nuestros clientes para asegurar el bienestar continuo
+          de sus mascotas.
+        </p>
+        <p>
+          Nos esforzamos por mantenernos actualizados con las últimas
+          tecnologías y técnicas en el campo de la veterinaria, asegurando que
+          cada mascota reciba la mejor atención posible.
+        </p>
+      </section>
+      <section class="multimedia">
+        <h2>Descubre Más Sobre Nosotros</h2>
+        <div class="video">
+          <h3>Cuidamos a tus mascotas con Pasión</h3>
+          <video class="video-nosotros" controls autoplay loop="true" muted="">
+            <source src="/assets/media/video/animales.mov" type="video/mp4"> 
+            Tu navegador no soporta el elemento de video.
+          </video>
         </div>
-
-        </section>
-      </main>
+        <div class="audio">
+          <h3>Información Útil</h3>
+          <audio controls>
+            <source src="/assets/media/audio/informacion.mp3" type="audio/mpeg" />
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </section>
+    </main>
     <footer>
-      <p>Derechos reservados Veterinaria Maskotas © 2024</p>
+      <p>© 2024 | Veterinaria Maskotas | Todos los derechos reservados</p>
+      <div class="social-media">
+        <p>Síguenos:</p>
+        <a href="https://twitter.com" target="_blank" class="social-icon"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://facebook.com" target="_blank" class="social-icon"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://youtube.com" target="_blank" class="social-icon"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank" class="social-icon"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <p class="disclaimer">
+        Este sitio fue desarrollado solo para fines académicos.<br />
+        Los nombres, imágenes, videos y marcas comerciales son propiedad de sus
+        dueños.<br />
+        No se pretende ningún uso comercial ni infracción de derechos de autor.
+      </p>
     </footer>
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+      <img src="/assets/images/whatsapp.webp" alt="WhatsApp" />
+    </a>
   </body>
 </html>
